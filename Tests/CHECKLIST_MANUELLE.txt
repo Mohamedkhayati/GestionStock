@@ -1,0 +1,19 @@
+GESTION DE STOCK PRO V2 - TESTS A FAIRE SUR WINDOWS
+===================================================
+[ ] SQL Server (SQLEXPRESS) demarre et connexion Windows fonctionne.
+[ ] Lancer GestionStock via F5 depuis Visual Studio 2026.
+[ ] La base GestionStockDb, tables Fournisseurs et Articles existent dans SSMS.
+[ ] Creer fournisseur 'MYTEK TEST' avec telephone et e-mail.
+[ ] Retour articles : dropdown contient 'MYTEK TEST'.
+[ ] Creer SSD TEST, prix achat HT 100,000, prix vente HT 150,000, TVA 19 : TTC 178,500.
+[ ] Modifier TVA a 7 : TTC 160,500.
+[ ] Rechercher SSD TEST et MYTEK TEST : l'article apparait.
+[ ] Modifier fournisseur 'MYTEK TEST' en 'MYTEK TUNISIE' : nom change aussi dans liste articles.
+[ ] Essayer supprimer fournisseur relie : operation refusee.
+[ ] Supprimer article, puis supprimer fournisseur : operation autorisee.
+[ ] Controle de reference double article : refus.
+[ ] Controle de nom fournisseur double : refus.
+[ ] Controle quantite negative / prix negatif / TVA hors 7,19.
+[ ] Export CSV et ouverture sous Excel.
+[ ] Tester sauvegarde puis restauration SQL avant de copier vers PC2.
+[ ] Tester publication et Setup sur PC de TEST ; verifier SQL installable separement.

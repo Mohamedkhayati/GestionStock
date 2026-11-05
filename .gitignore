@@ -1,0 +1,7 @@
+**/bin/
+**/obj/
+.vs/
+Publication/
+Installateur/Sortie/
+*.user
+*.suo

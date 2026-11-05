@@ -1,0 +1,17 @@
+          FOURNISSEURS (1)                     ARTICLES (N)
++--------------------------------+      +---------------------------------+
+| PK Id INT                      |      | PK Id INT                       |
+| Nom (unique)                   |      | Reference (unique)              |
+| Telephone                      |      | Nom                             |
+| Email                          |      | Quantite                        |
+| Adresse                        |      | PrixAchatHT                     |
+| MatriculeFiscal                |      | PrixVenteHT                     |
+| Notes                          |      | Tva (7 ou 19)                   |
++--------------------------------+      | PrixVenteTTC (calcule en SQL)    |
+              |                       | FK FournisseurId (NULL v1)       |
+              +-----------------------+---------------------------------+
+                                      1 fournisseur -> 0..N articles
+
+Interdiction SQL de supprimer un fournisseur tant qu'un article le reference.
+En v2, l'interface exige un fournisseur pour les nouveaux articles.
+Les articles recuperes de v1 restent temporairement sans association.
